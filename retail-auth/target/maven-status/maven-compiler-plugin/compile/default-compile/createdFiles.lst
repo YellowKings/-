@@ -1,1 +1,5 @@
-com\bawei\auth\AuthApplication.class
+com\retail\auth\feign\UserFeignService.class
+com\retail\auth\service\AuthService.class
+com\retail\auth\AuthApplication.class
+com\retail\auth\service\impl\AuthSerivceImpl.class
+com\retail\auth\controller\AuthController.class

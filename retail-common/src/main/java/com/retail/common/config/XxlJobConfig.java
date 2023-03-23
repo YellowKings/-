@@ -1,4 +1,4 @@
-package com.bawei.common.config;
+package com.retail.common.config;
 
 import com.xxl.job.core.executor.impl.XxlJobSpringExecutor;
 import org.slf4j.Logger;

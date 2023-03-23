@@ -1,4 +1,4 @@
-package com.bawei.gateway.config;
+package com.retail.gateway.config;
 
 import com.alibaba.fastjson.JSONObject;
 import lombok.Data;

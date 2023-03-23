@@ -1,8 +1,8 @@
-package com.bawei.gateway.utils;
+package com.retail.gateway.utils;
 
 import com.alibaba.fastjson.JSONObject;
-import com.bawei.common.result.Result;
-import com.bawei.common.utils.StringUtils;
+import com.retail.common.result.Result;
+import com.retail.common.utils.StringUtils;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.http.HttpHeaders;

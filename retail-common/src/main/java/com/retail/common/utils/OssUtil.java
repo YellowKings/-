@@ -1,4 +1,4 @@
-package com.bawei.common.utils;
+package com.retail.common.utils;
 
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;

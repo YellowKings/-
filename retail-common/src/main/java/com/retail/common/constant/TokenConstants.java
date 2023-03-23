@@ -1,4 +1,4 @@
-package com.bawei.common.constant;
+package com.retail.common.constant;
 
 /**
  * @author zhuwenqiang

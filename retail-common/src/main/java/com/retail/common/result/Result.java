@@ -1,6 +1,6 @@
-package com.bawei.common.result;
+package com.retail.common.result;
 
-import com.bawei.common.constant.Constants;
+import com.retail.common.constant.Constants;
 import lombok.Data;
 
 import java.io.Serializable;

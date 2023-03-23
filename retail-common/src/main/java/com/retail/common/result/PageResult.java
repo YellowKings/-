@@ -1,4 +1,4 @@
-package com.bawei.common.result;
+package com.retail.common.result;
 
 import lombok.Data;
 

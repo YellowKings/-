@@ -1,4 +1,4 @@
-package com.bawei.common.utils;
+package com.retail.common.utils;
 
 
 import org.apache.http.HttpResponse;

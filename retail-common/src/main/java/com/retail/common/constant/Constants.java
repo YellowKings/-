@@ -1,4 +1,4 @@
-package com.bawei.common.constant;
+package com.retail.common.constant;
 
 /**
  * @description: 系统常量

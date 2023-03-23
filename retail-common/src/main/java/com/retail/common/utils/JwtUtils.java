@@ -1,6 +1,6 @@
-package com.bawei.common.utils;
+package com.retail.common.utils;
 
-import com.bawei.common.constant.JwtConstants;
+import com.retail.common.constant.JwtConstants;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
