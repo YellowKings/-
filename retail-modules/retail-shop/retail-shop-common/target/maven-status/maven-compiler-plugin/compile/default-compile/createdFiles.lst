@@ -1,0 +1,10 @@
+com\retail\shop\domain\InventoryEntity.class
+com\retail\shop\domain\ShopEntity.class
+com\retail\shop\domain\RetaiUserCouponCenterEntity.class
+com\retail\shop\domain\SkuEntity.class
+com\retail\shop\domain\BrandEntity.class
+com\retail\shop\domain\FirstCycleImageEntity.class
+com\retail\shop\domain\SpecificationEntity.class
+com\retail\shop\domain\SpuEntity.class
+com\retail\shop\domain\StoreCouponEntity.class
+com\retail\shop\domain\ClassifiedEntity.class

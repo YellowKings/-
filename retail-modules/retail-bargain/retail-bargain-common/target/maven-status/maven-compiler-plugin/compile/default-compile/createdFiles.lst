@@ -1,0 +1,7 @@
+com\retail\bargain\domain\CoverTemplateEntity.class
+com\retail\bargain\domain\MateEntity.class
+com\retail\bargain\domain\BargainEntity.class
+com\retail\bargain\domain\BargainRecordEntity.class
+com\retail\bargain\domain\TeamEntity.class
+com\retail\bargain\domain\SeckillEntity.class
+com\retail\bargain\domain\TeamRecordEntity.class

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>retail-cloud</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>retail-auth</module>
+        <module>retail-common</module>
+        <module>retail-gateway</module>
+        <module>retail-modules</module>
+    </modules>
+
+
+    <!-- 规定SpringBoot版本 -->
+    <parent>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.6.2</version>
+        <relativePath/>
+    </parent>
+
+    <!-- 锁定 springcloud  && alibaba -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- SpringCloud 微服务 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2021.0.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- SpringCloud Alibaba 微服务 -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2021.1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- Alibaba Nacos 配置 -->
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-client</artifactId>
+                <version>2.0.4</version>
+            </dependency>
+
+            <!--  公共common -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- 商品模块  common 依赖 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-shop-common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- 商品模块  远程调用 依赖 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-shop-remote</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- 用户模块  common 依赖 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-user-common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- 用户模块  远程调用 依赖 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-user-remote</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- 订单模块  common 依赖 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-order-common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- 订单模块  远程调用 依赖 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-order-remote</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <!-- 团长模块  common 依赖 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-colonel-common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- 团长模块  远程调用 依赖 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-colonel-remote</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- 团长模块  common 依赖 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-bargain-common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- 团长模块  远程调用 依赖 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-bargain-remote</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <!-- 团长模块  common 依赖 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-payment-common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- 团长模块  远程调用 依赖 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>retail-payment-remote</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!--        mybatis-plus-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>3.3.1.tmp</version>
+            </dependency>
+
+
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
