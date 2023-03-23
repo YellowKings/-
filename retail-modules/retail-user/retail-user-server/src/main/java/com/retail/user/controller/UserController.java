@@ -1,23 +1,20 @@
 package com.retail.user.controller;
 
-import java.util.List;
-
 
 import cn.hutool.core.bean.BeanUtil;
-import com.retail.common.domain.request.UserEntityRequest;
+import cn.hutool.core.lang.Validator;
 import com.retail.common.domain.vo.UserEntityVo;
+import com.retail.common.domain.vo.UserLoginPasswordVo;
+import com.retail.common.exception.BizException;
 import com.retail.common.result.Result;
-import com.retail.user.domain.UserEntity;
+import com.retail.common.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.retail.user.service.UserService;
-
+import com.retail.user.domain.UserEntity;
 
 /**
  * 用户表
@@ -34,22 +31,27 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    /**
-     * 注册
-     * @param userEntityRequest
-     * @return
-     */
-    @PostMapping("/register")
-    public Result register(@RequestBody UserEntityRequest userEntityRequest){
-        return userService.register(userEntityRequest);
-    }
 
+    @PostMapping("/loginPassword")
+    public Result<UserEntityVo> loginPassword(@RequestBody UserLoginPasswordVo userLoginPasswordVo){
+        //判断不为空
+        if (StringUtils.isBlank(userLoginPasswordVo.getPhone())){
+            throw new BizException(502,"手机号不能为空");
+        }
+        //判断是否合法
+        if (!Validator.isMobile(userLoginPasswordVo.getPhone())){
+            throw new BizException(502,"手机号不合法");
+        }
 
-    @PostMapping("/userInfo")
-    public Result<UserEntityVo> userInfo(){
-        UserEntity userEntity = userService.userInfo();
+        if (StringUtils.isBlank(userLoginPasswordVo.getPassword())){
+            throw new BizException(502,"密码不能为空");
+        }
+
+        Result<UserEntity> userEntityResult = userService.loginPassword(userLoginPasswordVo);
+        UserEntity data = userEntityResult.getData();
         UserEntityVo userEntityVo = new UserEntityVo();
-        BeanUtil.copyProperties(userEntity,userEntityVo);
-        return Result.success(userEntityVo);
+        BeanUtil.copyProperties(data,userEntityVo);
+        return  Result.success(userEntityVo);
     }
+
 }
