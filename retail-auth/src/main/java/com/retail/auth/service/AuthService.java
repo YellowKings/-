@@ -1,5 +1,8 @@
 package com.retail.auth.service;
 
+import com.retail.common.domain.vo.UserEntityVo;
+import com.retail.common.result.Result;
+
 /**
  * @author AuthService
  * @BelongsProject: retail-cloud
@@ -10,4 +13,6 @@ package com.retail.auth.service;
  * @Version:
  */
 public interface AuthService {
+    Result register(UserEntityVo userEntityVo);
+
 }
