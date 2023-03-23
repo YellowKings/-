@@ -1,9 +1,11 @@
 package com.retail.auth.controller;
 
 import com.retail.auth.service.AuthService;
+import com.retail.common.domain.request.UserEntityRequest;
 import com.retail.common.domain.vo.UserEntityVo;
 import com.retail.common.result.Result;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -22,7 +24,12 @@ public class AuthController {
     private AuthService authService;
 
     @PostMapping("/register")
-    public Result register(@RequestBody UserEntityVo userEntityVo){
-        return authService.register(userEntityVo);
+    public Result register(@RequestBody UserEntityRequest userEntityRequest){
+        return authService.register(userEntityRequest);
+    }
+
+    @GetMapping("/userInfo")
+    public Result<UserEntityVo> userInfo(){
+        return authService.userInfo();
     }
 }

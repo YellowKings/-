@@ -1,13 +1,14 @@
 package com.retail.user.domain;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.Date;
-import lombok.Data;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 
 /**
  * 用户表
@@ -26,7 +27,7 @@ public class UserEntity implements Serializable {
 	/**
 	 * id
 	 */
-	@TableId
+	@TableId(type = IdType.AUTO)
 	private Long id;
 	/**
 	 * 用户名
@@ -63,7 +64,7 @@ public class UserEntity implements Serializable {
 	/**
 	 * 头像
 	 */
-	private String header;
+	private String headerImages;
 	/**
 	 * 用户性别（0男 1女 2未知)
 	 */

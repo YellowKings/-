@@ -32,7 +32,7 @@ public class UserRecordEntity implements Serializable {
 	/**
 	 * 用户ID
 	 */
-	private Integer userId;
+	private Long userId;
 	/**
 	 * 订单号(账户流水号)
 	 */

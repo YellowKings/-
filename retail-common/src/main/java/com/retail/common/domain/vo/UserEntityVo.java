@@ -1,13 +1,11 @@
 package com.retail.common.domain.vo;
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.Date;
+import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 /**
  * 用户表
@@ -33,10 +31,6 @@ public class UserEntityVo implements Serializable {
 	 * 密码
 	 */
 	private String password;
-	/**
-	 * 确认密码
-	 */
-	private String passwordVerify;
 	/**
 	 * 盐
 	 */
@@ -64,7 +58,7 @@ public class UserEntityVo implements Serializable {
 	/**
 	 * 头像
 	 */
-	private String header;
+	private String headerImages;
 	/**
 	 * 用户性别（0男 1女 2未知)
 	 */

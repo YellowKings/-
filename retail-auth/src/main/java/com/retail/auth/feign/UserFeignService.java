@@ -1,6 +1,11 @@
 package com.retail.auth.feign;
 
+import com.retail.common.domain.request.UserEntityRequest;
+import com.retail.common.domain.vo.UserEntityVo;
+import com.retail.common.result.Result;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 /**
  * @author UserFeignService
@@ -13,4 +18,10 @@ import org.springframework.cloud.openfeign.FeignClient;
  */
 @FeignClient("retail-user")
 public interface UserFeignService {
+    @PostMapping("user/user/register")
+    Result register(@RequestBody UserEntityRequest userEntityRequest);
+
+    @PostMapping("user/user/userInfo")
+    public Result<UserEntityVo> userInfo();
+
 }
