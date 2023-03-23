@@ -1,1 +1,5 @@
-E:\java\practical\retail-cloud\retail-auth\src\main\java\com\bawei\auth\AuthApplication.java
+D:\workspace\shixun_1\retail-cloud-3.23\retail-auth\src\main\java\com\retail\auth\AuthApplication.java
+D:\workspace\shixun_1\retail-cloud-3.23\retail-auth\src\main\java\com\retail\auth\service\impl\AuthSerivceImpl.java
+D:\workspace\shixun_1\retail-cloud-3.23\retail-auth\src\main\java\com\retail\auth\service\AuthService.java
+D:\workspace\shixun_1\retail-cloud-3.23\retail-auth\src\main\java\com\retail\auth\controller\AuthController.java
+D:\workspace\shixun_1\retail-cloud-3.23\retail-auth\src\main\java\com\retail\auth\feign\UserFeignService.java

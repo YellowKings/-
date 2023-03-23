@@ -8,14 +8,17 @@ com\retail\bargain\service\impl\SeckillServiceImpl.class
 com\retail\bargain\controller\TeamController.class
 com\retail\bargain\service\impl\MateServiceImpl.class
 com\retail\bargain\mapper\BargainMapper.class
+com\retail\bargain\config\DelayRabbitMq.class
 com\retail\bargain\controller\CoverTemplateController.class
 com\retail\bargain\mapper\SeckillMapper.class
 com\retail\bargain\service\MateService.class
 com\retail\bargain\service\impl\TeamServiceImpl.class
 com\retail\bargain\service\TeamService.class
+com\retail\bargain\config\Aop.class
 com\retail\bargain\mapper\TeamMapper.class
 com\retail\bargain\mapper\TeamRecordMapper.class
 com\retail\bargain\controller\BargainRecordController.class
+com\retail\bargain\config\RedisSonConfig.class
 com\retail\bargain\service\BargainService.class
 com\retail\bargain\service\BargainRecordService.class
 com\retail\bargain\controller\TeamRecordController.class

@@ -5,6 +5,7 @@ com\retail\colonel\service\ColonelApplyService.class
 com\retail\colonel\mapper\RouteMapper.class
 com\retail\colonel\service\RouteService.class
 com\retail\colonel\service\ColonelService.class
+com\retail\colonel\config\DelayRabbitMq.class
 com\retail\colonel\controller\ColonelApplyController.class
 com\retail\colonel\service\GradeService.class
 com\retail\colonel\mapper\GradeMapper.class
@@ -17,9 +18,11 @@ com\retail\colonel\controller\WarehouseController.class
 com\retail\colonel\service\impl\ColonelApplyServiceImpl.class
 com\retail\colonel\service\WarehouseService.class
 com\retail\colonel\service\impl\WarehouseServiceImpl.class
+com\retail\colonel\config\Aop.class
 com\retail\colonel\mapper\GroupConfigMapper.class
 com\retail\colonel\service\impl\GroupConfigServiceImpl.class
 com\retail\colonel\mapper\ColonelApplyMapper.class
+com\retail\colonel\config\RedisSonConfig.class
 com\retail\colonel\controller\GradeController.class
 com\retail\colonel\service\impl\RouteServiceImpl.class
 com\retail\colonel\service\GroupConfigService.class

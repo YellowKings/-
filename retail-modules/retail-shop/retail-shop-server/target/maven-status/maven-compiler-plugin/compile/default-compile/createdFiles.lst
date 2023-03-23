@@ -1,6 +1,7 @@
 com\retail\shop\mapper\RetaiUserCouponCenterMapper.class
 com\retail\shop\controller\SkuController.class
 com\retail\shop\service\BrandService.class
+com\retail\shop\config\DelayRabbitMq.class
 com\retail\shop\mapper\SpuMapper.class
 com\retail\shop\service\ShopService.class
 com\retail\shop\controller\StoreCouponController.class
@@ -22,6 +23,7 @@ com\retail\shop\service\impl\FirstCycleImageServiceImpl.class
 com\retail\shop\controller\ClassifiedController.class
 com\retail\shop\controller\InventoryController.class
 com\retail\shop\controller\SpuController.class
+com\retail\shop\config\RedisSonConfig.class
 com\retail\shop\service\impl\RetaiUserCouponCenterServiceImpl.class
 com\retail\shop\service\ClassifiedService.class
 com\retail\shop\service\impl\ClassifiedServiceImpl.class
@@ -31,6 +33,7 @@ com\retail\shop\controller\FirstCycleImageController.class
 com\retail\shop\mapper\ShopMapper.class
 com\retail\shop\mapper\StoreCouponMapper.class
 com\retail\shop\service\RetaiUserCouponCenterService.class
+com\retail\shop\config\Aop.class
 com\retail\shop\controller\RetaiUserCouponCenterController.class
 com\retail\shop\service\SpecificationService.class
 com\retail\shop\mapper\BrandMapper.class

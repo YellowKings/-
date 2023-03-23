@@ -26,6 +26,8 @@ com\retail\user\service\UserCollectSkuService.class
 com\retail\user\controller\UserAddressController.class
 com\retail\user\service\IntegrationHistoryService.class
 com\retail\user\service\UserRoleService.class
+com\retail\user\config\Aop.class
+com\retail\user\config\DelayRabbitMq.class
 com\retail\user\service\impl\UserCollectSkuServiceImpl.class
 com\retail\user\mapper\UserRecordMapper.class
 com\retail\user\service\impl\UserCollectShopServiceImpl.class
