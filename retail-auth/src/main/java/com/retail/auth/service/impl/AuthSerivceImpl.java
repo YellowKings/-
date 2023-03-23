@@ -1,7 +1,7 @@
 package com.retail.auth.service.impl;
 
 import com.retail.auth.service.AuthService;
-import com.retail.common.domain.vo.UserEntityVo;
+import com.retail.common.domain.vo.UserLoginPasswordVo;
 import com.retail.common.result.Result;
 import com.retail.common.utils.StringUtils;
 import org.springframework.stereotype.Service;
@@ -18,11 +18,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class AuthSerivceImpl implements AuthService {
 
-    @Override
-    public Result register(UserEntityVo userEntityVo) {
-        if (StringUtils.isEmpty(userEntityVo.getUsername())){
 
-        }
-        return null;
-    }
+
 }

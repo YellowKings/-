@@ -1,6 +1,6 @@
 package com.retail.auth.service;
 
-import com.retail.common.domain.vo.UserEntityVo;
+import com.retail.common.domain.vo.UserLoginPasswordVo;
 import com.retail.common.result.Result;
 
 /**
@@ -13,6 +13,8 @@ import com.retail.common.result.Result;
  * @Version:
  */
 public interface AuthService {
-    Result register(UserEntityVo userEntityVo);
+
+
+
 
 }
