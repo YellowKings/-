@@ -78,4 +78,15 @@ public class SeckillEntity implements Serializable {
 	 */
 	private Integer postFree;
 
+	/**
+	 * 秒杀商品描述介绍
+	 */
+
+	private String seckillIntroduce;
+
+	/**
+	 * 秒杀配置id
+	 */
+	private Integer seckillConfigId;
+
 }
