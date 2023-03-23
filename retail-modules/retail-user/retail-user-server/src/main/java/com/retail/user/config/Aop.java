@@ -2,8 +2,10 @@ package com.retail.user.config;
 
 import lombok.extern.log4j.Log4j2;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
@@ -48,9 +50,4 @@ public class Aop {
 
     }
 
-    @AfterReturning(returning = "ret", pointcut = "p1()")
-    public void doAfterReturning(Object ret) throws Throwable {
-        //处理完请求 , 返回内容
-        log.info("返回值:{}", ret);
-    }
 }
