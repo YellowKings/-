@@ -1,5 +1,6 @@
 package com.retail.auth.service;
 
+import com.retail.common.domain.response.JwtResponse;
 import com.retail.common.domain.vo.UserLoginPasswordVo;
 import com.retail.common.result.Result;
 
@@ -15,6 +16,7 @@ import com.retail.common.result.Result;
 public interface AuthService {
 
 
+    Result<JwtResponse> loginPassword(UserLoginPasswordVo userLoginPasswordVo);
 
 
 }

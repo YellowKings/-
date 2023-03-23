@@ -1,5 +1,6 @@
 package com.retail.auth.feign;
 
+import com.retail.common.domain.vo.UserEntityVo;
 import com.retail.common.domain.vo.UserLoginPasswordVo;
 import com.retail.common.result.Result;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -19,5 +20,5 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface UserFeignService {
 
     @PostMapping("user/user/loginPassword")
-    public Result loginPassword(@RequestBody UserLoginPasswordVo userLoginPasswordVo);
+    public Result<UserEntityVo> loginPassword(@RequestBody UserLoginPasswordVo userLoginPasswordVo);
 }
