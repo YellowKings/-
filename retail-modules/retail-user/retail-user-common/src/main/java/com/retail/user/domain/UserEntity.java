@@ -43,7 +43,7 @@ public class UserEntity implements Serializable {
 	/**
 	 * 昵称
 	 */
-	private String nickname;
+	private String nickName;
 	/**
 	 * 手机号
 	 */
@@ -92,14 +92,6 @@ public class UserEntity implements Serializable {
 	 * 用户余额
 	 */
 	private Integer balance;
-	/**
-	 * 角色id（消费者 团长）
-	 */
-	private Integer roleId;
-	/**
-	 * 最后登录IP
-	 */
-	private String loginIp;
 	/**
 	 * 最后登录时间
 	 */
