@@ -14,6 +14,11 @@ import com.retail.common.utils.JwtUtils;
 import com.retail.common.utils.StringUtils;
 import com.retail.user.constant.Constant;
 import com.retail.user.domain.PowerUserEntity;
+
+import com.retail.common.domain.vo.UserLoginPasswordVo;
+import com.retail.common.exception.BizException;
+import com.retail.common.result.Result;
+
 import com.retail.user.domain.UserEntity;
 import com.retail.user.service.PowerUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -107,9 +112,18 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
         String userKey = JwtUtils.getUserKey(token);
         String s = redisTemplate.opsForValue().get(TokenConstants.LOGIN_TOKEN_KEY + userKey);
         UserEntity user = JSON.parseObject(s, UserEntity.class);
-
         return  user;
     }
+    @Override
+    public Result<UserEntity> loginPassword(UserLoginPasswordVo userLoginPasswordVo) {
+        //判断用户是否存在
 
+        UserEntity userEntity = baseMapper.selectOne(new QueryWrapper<UserEntity>().lambda()
+                .eq(UserEntity::getPhone, userLoginPasswordVo.getPhone()));
+        if (userEntity==null){
+            throw  new BizException(502,"用户没有注册，请注册");
+        }
 
+        return Result.success(userEntity);
+    }
 }
